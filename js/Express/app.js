@@ -1,5 +1,5 @@
 const express = require('express');
-
+const path = require('path');
 const app = express();
 const port = 80;
 
@@ -8,6 +8,13 @@ app.use('/static', express.static('static'));
 
 // Set template engine as pug
 app.set('view engine', 'pug');
+
+//Set the view directory 
+app.set('views', path.join(__dirname,'views'));
+
+app.get('/demo', (req, res) => {
+    res.render('demo', { title: 'Hey Brijesh', message: 'Hello there and thanks for telling me how to use pug!' })
+  });
 
 app.get("/", (req, res)=>{
     res.end('This is the home page of my first Express app');
