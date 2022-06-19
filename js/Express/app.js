@@ -4,7 +4,10 @@ const app = express();
 const port = 80;
 
 // For serving static files
-app.use('/static', express.static('static'))
+app.use('/static', express.static('static'));
+
+// Set template engine as pug
+app.set('view engine', 'pug');
 
 app.get("/", (req, res)=>{
     res.end('This is the home page of my first Express app');
