@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow Function</title>
+</head>
+<body>
+    <div class="container">
+        This is Arrow Function tutorial
+    </div>
+    <script>
+        let greet = () =>{
+            console.log('Good Morning')
+        }
+
+        // this is shortcut of above example
+        let greet1 = () => console.log('Good Morning');
+
+        let sum = (a, b)=> {
+            return a+b;
+        }
+
+
+        // this is shortcut of above example
+        let sum1 = (a,b)=> a+b;
+
+        greet();
+        greet1();
+        console.log(sum(5,10));
+        console.log(sum(5,10));
+
+        let obj1 = {
+            names: ['Brijesh', 'Vineet', 'Adnan', 'Malav'],
+            speak(){
+                this.names.forEach((student)=>{
+                    console.log('Kookdoo koo ' + student);
+                });
+            }
+        }
+        obj1.speak();
+
+    </script>
+</body>
+</html>

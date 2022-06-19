@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Events</title>
+</head>
+<style>
+    #para{
+        display: block;
+    }
+</style>
+<body>
+    <div class="container">
+        <h1>This is my heading</h1>
+        <p id="para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos, laboriosam quis aliquid ad odit ea id quaerat qui exercitationem incidunt porro aliquam aperiam dolorem impedit eos reprehenderit dignissimos enim cumque laborum adipisci illo. Quibusdam minima consectetur placeat quas numquam! Sint consectetur eveniet, veritatis fugiat minus laboriosam blanditiis inventore aliquid nihil repellendus iure sequi facilis error reprehenderit debitis libero maxime repudiandae vitae neque! Beatae quisquam recusandae harum? Perferendis minus error corporis quia, voluptas iusto, minima eius illo voluptate consectetur officia sapiente autem iure eum tempora id, magni possimus neque! Necessitatibus, quae ad? Nisi culpa a voluptates modi vitae quis amet voluptate iste reprehenderit. Tempore voluptatibus consequuntur inventore quas suscipit nostrum eius aliquid necessitatibus quia. Amet quisquam nesciunt, fugiat cum obcaecati voluptatem ut natus repellendus, illum adipisci hic sapiente unde? Cumque magnam quisquam aliquam nesciunt non excepturi consectetur natus, voluptates ducimus, sequi provident totam omnis beatae. At laboriosam magni illo corrupti sit quasi neque ducimus veniam rem iste nisi officiis eos debitis aliquid, esse, accusantium placeat amet cum vero assumenda, iure dolorem! Cumque nihil commodi voluptates voluptate consequatur architecto dolorem, iure nam fugiat dolorum tempore aliquam impedit velit voluptatibus quas? Sed, ipsa officia? Cumque a consectetur id laudantium soluta magnam blanditiis recusandae, provident ducimus aut aperiam fuga? Quod deleniti dignissimos rerum magnam non ipsa neque voluptates aliquam nobis similique? Fuga architecto inventore blanditiis sint officiis quis cupiditate similique atque veniam reiciendis explicabo rem accusamus commodi, obcaecati deleniti natus ducimus consectetur! Quo ipsa eos quaerat consequuntur possimus inventore.0</p>
+    </div>
+    <button id="btn">Show/Hide</button>
+    <script> 
+        let btn = document.getElementById('btn');
+        let para = document.getElementById('para');
+        btn.addEventListener('click', toggleHide);
+
+        function toggleHide(){
+            // let para = document.getElementById('para');
+            if(para.style.display != 'none')
+            {
+                console.log('display none')
+                para.style.display = 'none';
+            }
+            else{
+                console.log('display block')
+                para.style.display = 'block';
+            }
+
+
+            para.addEventListener('mouseover',function mouseOver(){
+                console.log('Mouse over');
+            });
+
+            para.addEventListener('mouseout',function mouseOut(){
+                console.log('Mouse Out');
+            });
+
+           
+        }
+    </script>
+</body>
+</html>

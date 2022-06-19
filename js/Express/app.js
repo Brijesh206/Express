@@ -3,6 +3,9 @@ const express = require('express');
 const app = express();
 const port = 80;
 
+// For serving static files
+app.use('/static', express.static('static'))
+
 app.get("/", (req, res)=>{
     res.end('This is the home page of my first Express app');
 });

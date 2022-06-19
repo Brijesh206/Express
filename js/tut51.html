@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scope and conditional Statement in javaScript</title>
+</head>
+<body>
+    <div>
+        <ul>
+            <li>item-1</li>
+            <li>item-2</li>
+            <li>item-3</li>
+            <li>item-4</li>
+            <li>item-5</li>
+            <li>item-6</li>
+            <li>item-7</li>
+        </ul>
+    </div>
+    <script>
+        var string1 = 'This is a string';
+        console.log(string1);
+
+        let age = 18;
+        if(age>18){
+            console.log('You are an adult');
+        }
+        else{
+            console.log('You are not an adult')
+        }
+
+        const day='Monday';
+        switch (day) {
+            case 'Monday':
+                console.log('It is Monday');
+                break;
+        
+            case 'Tuseday':
+                console.log('It is Tuseday');
+                break;
+        
+            case 'Wednesday':
+                console.log('It is Wednesday');
+                break;
+        
+            case 'Thursday':
+                console.log('It is Thursday');
+                break;
+        
+            case 'Friday':
+                console.log('It is Friday');
+                break;
+        
+            case 'Saturday':
+                console.log('It is Saturday');
+                break;
+
+            case 'Sunday':
+                console.log('It is Sunday');
+                break;
+        
+            default:console.log('None of these')
+                break;
+        }
+    </script>
+</body>
+</html>

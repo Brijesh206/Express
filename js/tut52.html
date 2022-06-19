@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays and Objects</title>
+</head>
+<body>
+    <h1>Simple Html</h1>
+    <script>
+
+        // Creating an Object and printing on console
+        let employee = {
+            name:'Brijesh',
+            salary: 50,
+            work:'Student',
+            college:'GIT'
+        }
+        console.log(employee);
+
+        // Accessing an elements of objects
+        
+        console.log(employee.name);    // OR
+        console.log(employee['name']);
+
+        // Creating an Array Object and printing on console
+        let array = [51, 5, 45, null, undefined, 'Brijesh', 'Harry']
+        console.log(array);
+        // Accessing perticular element in array by its index
+        console.log(array[2]);
+
+        //lenght of array
+        console.log(array.length);
+
+        //sorting and array
+        array = array.sort();
+        console.log(array);
+
+        //adding an element in array
+
+        array.push('Stark');
+        console.log(array);
+  </script>
+</body>
+</html>

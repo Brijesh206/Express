@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+body{
+    background-color: black;
+    font-size: 16px;
+    /* background: url('https://picsum.photos/1600/900?grayscale'); */
+    background-size: 100%;
+    font-family: 'Baloo Da 2', cursive;
+
+}
+header::before{
+    background: url('https://source.unsplash.com/collection/190727/1600x900') no-repeat center center/cover;
+    content: "";
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.3;
+}
+nav{
+    /* background-color: aqua; */
+    width: 500px;
+    display: block;
+    margin: auto;
+}
+.menu li{
+    display: inline-block;
+    padding: 18px;
+    margin: auto;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    cursor: pointer;
+}
+.btn{
+    float: right;
+    position: relative;
+    background-color: rgb(42, 44, 42);
+    padding: 6px;
+    width: 116px;
+    top: -65px;
+    right: 34px;
+    border-radius: 10px;
+    border: 2px solid grey;
+    color: white;
+    cursor: pointer;
+}
+/* .content{
+    display: flexbox;
+    color: white;
+    width: 600px;
+    margin: auto;
+    padding: 20px;
+} */
+section {
+    height: 344px;
+    font-family: 'Bree Serif', serif;
+    margin: 3px 230px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+.btn:hover{
+    background-color: rgb(61, 67, 73);
+}
+.menu li:hover{
+    color: rgb(152, 165, 177);
+}
+.menu li:active{
+    color: rgb(152, 165, 177);
+}
+hr{
+    color: black;
+}
